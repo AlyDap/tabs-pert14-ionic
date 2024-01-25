@@ -15,3 +15,19 @@ npm i
 
 # Run
 ionic serve
+
+# Panduan install tabs
+ke direktori kosong, bukan di dalam template
+ionic start tabs
+
+Masuk ke direktori nya
+delete folder pada app\
+explore-container
+dalam setiap directory tab1,2,3 menghapus :
+code ts dan code html
+
+import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
+
+    ExploreContainerComponentModule,
+
+  <app-explore-container name="Tab 3 page"></app-explore-container>
