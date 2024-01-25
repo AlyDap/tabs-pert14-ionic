@@ -30,8 +30,8 @@ explore-container
 dalam setiap directory tab1,2,3 menghapus :
 code ts dan code html
 
- <!-- import { ExploreContainerComponentModule } from '../explore-container/explore-container.module'; -->
+// import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
- <!-- ExploreContainerComponentModule, -->
+// ExploreContainerComponentModule,
 
- <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
+// <app-explore-container name="Tab 3 page"></app-explore-container>
