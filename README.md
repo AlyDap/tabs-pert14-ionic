@@ -34,4 +34,4 @@ code ts dan code html
 
 // ExploreContainerComponentModule,
 
-// <app-explore-container name="Tab 3 page"></app-explore-container>
+// app-explore-container name="Tab 3 page"> /app-explore-container>
