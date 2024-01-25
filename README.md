@@ -28,7 +28,7 @@ Masuk ke direktori nya
 delete folder pada app\
 explore-container
 dalam setiap directory tab1,2,3 menghapus :
-code ts dan code html
+code tab1.module.ts dan tab1.page.html
 
 // import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
