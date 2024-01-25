@@ -1,4 +1,5 @@
 # Deskripsi
+
 Tugas pert 14 Mobile 1 sebelum UAS
 
 Silahkan buat aplikasi dengan ketentuan berikut:
@@ -11,12 +12,15 @@ Silahkan buat aplikasi dengan ketentuan berikut:
 Kirim projek yang sudah dihapus bagian node modules dan angular dalam bentuk zip ke sini.
 
 # Instalation
+
 npm i
 
 # Run
+
 ionic serve
 
 # Panduan install tabs
+
 ke direktori kosong, bukan di dalam template
 ionic start tabs
 
@@ -26,8 +30,8 @@ explore-container
 dalam setiap directory tab1,2,3 menghapus :
 code ts dan code html
 
-import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
+ <!-- import { ExploreContainerComponentModule } from '../explore-container/explore-container.module'; -->
 
-    ExploreContainerComponentModule,
+ <!-- ExploreContainerComponentModule, -->
 
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+ <!-- <app-explore-container name="Tab 3 page"></app-explore-container> -->
