@@ -24,13 +24,13 @@ export class TabsPage {
         this.currentTabTitle = 'Home';
         break;
       case 'tab1':
-        this.currentTabTitle = 'Tab 1';
+        this.currentTabTitle = 'Naruto';
         break;
       case 'tab2':
-        this.currentTabTitle = 'Tab 2';
+        this.currentTabTitle = 'Daftar Misi';
         break;
       case 'tab3':
-        this.currentTabTitle = 'Tab 3';
+        this.currentTabTitle = 'Info Ninja';
         break;
       default:
         this.currentTabTitle = 'Unknown Tab';

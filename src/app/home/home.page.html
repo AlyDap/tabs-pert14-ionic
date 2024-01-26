@@ -1,30 +1,66 @@
-<ion-header>
+<!-- <ion-header>
   <ion-toolbar>
     <ion-title>Home Inline Modal</ion-title>
   </ion-toolbar>
-</ion-header>
+</ion-header> -->
 <ion-content class="ion-padding">
-  <ion-button id="open-modal" expand="block">Open</ion-button>
-  <p>{{ message }}</p>
-  <ion-modal trigger="open-modal" (willDismiss)="onWillDismiss($event)">
-    <ng-template>
-      <ion-header>
-        <ion-toolbar>
-          <ion-buttons slot="start">
-            <ion-button (click)="cancel()">Cancel</ion-button>
-          </ion-buttons>
-          <ion-title>Welcome</ion-title>
-          <ion-buttons slot="end">
-            <ion-button (click)="confirm()" [strong]="true">Confirm</ion-button>
-          </ion-buttons>
-        </ion-toolbar>
-      </ion-header>
-      <ion-content class="ion-padding">
-        <ion-item>
-          <ion-input label="Enter your name" labelPlacement="stacked" type="text" placeholder="Your name"
-            [(ngModel)]="name"></ion-input>
-        </ion-item>
-      </ion-content>
-    </ng-template>
-  </ion-modal>
+  <pre></pre>
+
+  <ion-list>
+    <ion-item>
+
+      <h2>Input Data Ninja</h2>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Kode Ninja" labelPlacement="floating" placeholder="Kode Ninja" [(ngModel)]="nip"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Nama Ninja" labelPlacement="floating" placeholder="Nama" [(ngModel)]="nama"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Kemampuan" labelPlacement="floating" placeholder="Kemampuan"
+        [(ngModel)]="kemampuan"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-select label="Pangkat" placeholder="Pangkat" [(ngModel)]="gol">
+        <ion-select-option value="Genin">Genin</ion-select-option>
+        <ion-select-option value="Chunin">Chunin</ion-select-option>
+        <ion-select-option value="Jonin">Jonin</ion-select-option>
+        <ion-select-option value="Kage">Kage</ion-select-option>
+        <ion-select-option value="Anbu">Anbu</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-input type="date" label="Tanggal Lahir" labelPlacement="floating" placeholder="Tanggal Lahir"
+        [(ngModel)]="tgllhr"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-select label="Jenis Kelamin" placeholder="Jenis Kelamin" [(ngModel)]="jnskel">
+        <ion-select-option value="Laki-laki">Laki-laki</ion-select-option>
+        <ion-select-option value="Perempuan">Perempuan</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-select label="Misi Favorit" placeholder="Misi Favorit" [multiple]="true" [(ngModel)]="jnstun">
+        <ion-select-option value=" Menjaga Desa">Menjaga Desa</ion-select-option>
+        <ion-select-option value=" Mengintai Musuh">Mengintai Musuh</ion-select-option>
+        <ion-select-option value=" Mencari Ninja Buronan">Mencari Ninja Buronan</ion-select-option>
+        <ion-select-option value=" Menyembuhkan Pasien">Menyembuhkan Pasien</ion-select-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-input label="Bayaran" labelPlacement="floating" placeholder="Bayaran" type="number"
+        [(ngModel)]="gaji"></ion-input>
+    </ion-item>
+    <ion-button id="simpan" expand="block" shape="round" color="primary" (click)="simpan()"
+      [routerLink]="['/tabs/tab3']">Simpan</ion-button>
+    <!-- [routerLink]="['/profil']" -->
+    <ion-button expand="block" shape="full" color="danger" (click)="clear()">Clear</ion-button>
+  </ion-list>
+
+  <ion-toast trigger="simpan"
+    message="Kode Ninja: {{nip}}, Nama: {{nama}}, Kemampuan: {{kemampuan}}, Pangkat: {{gol}}, Misi Favorit:{{jnstun}}, Tanggal Lahir: {{tgllhr}}, Jenis Kelamin {{jnskel}}, Bayaran: Rp{{gaji}}"
+    [duration]="5555">
+  </ion-toast>
+
 </ion-content>
